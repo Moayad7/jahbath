@@ -432,7 +432,7 @@ body {
   transition: 0.7s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .solution_cards_box .solution_card:hover {
@@ -523,8 +523,8 @@ body {
 }
 
 .solution_cards_box .solution_card .so_top_icon {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #fff;
   overflow: hidden;
