@@ -1,3 +1,22 @@
+AOS.init();
+
+
+window.addEventListener("load", () => {
+  this.setTimeout(() => {
+    document
+      .querySelector(".spinnerContainer")
+      .classList.add("loader1--hidden");
+    document
+      .querySelector(".spinnerContainer")
+      .classList.remove("loader1--visible");
+    
+  },2500);
+  this.setTimeout(() => {
+    document.querySelector(".spinnerContainer").classList.add("hidden");
+  }, 3000);
+});
+
+
 var toggle = document.getElementById("navbar-toggler");
 var toggle2 = document.getElementById("navbar-toggler2");
 
@@ -48,23 +67,3 @@ function topFunction() {
 
 
 
-
-
-
-AOS.init();
-
-
-window.addEventListener("load", () => {
-  this.setTimeout(() => {
-    document
-      .querySelector(".spinnerContainer")
-      .classList.add("loader1--hidden");
-    document
-      .querySelector(".spinnerContainer")
-      .classList.remove("loader1--visible");
-    
-  },2500);
-  this.setTimeout(() => {
-    document.querySelector(".spinnerContainer").classList.add("hidden");
-  }, 3000);
-});
