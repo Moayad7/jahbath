@@ -45,3 +45,26 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+
+AOS.init();
+
+
+window.addEventListener("load", () => {
+  this.setTimeout(() => {
+    document
+      .querySelector(".spinnerContainer")
+      .classList.add("loader1--hidden");
+    document
+      .querySelector(".spinnerContainer")
+      .classList.remove("loader1--visible");
+    
+  },2500);
+  this.setTimeout(() => {
+    document.querySelector(".spinnerContainer").classList.add("hidden");
+  }, 3000);
+});
